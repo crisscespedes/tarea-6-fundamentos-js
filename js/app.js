@@ -32,10 +32,19 @@ console.log(sumar(4,5));
 console.log(typeof sumar())
 
 
-
 function sumando(c,d){
     console.log(arguments);
     return c + d;
 }
 let res = sumando(5,6,1,2,3);
 console.log(res);
+
+//Funciones con variables locales
+let total = 0;
+function sumadito(x,y){
+    let aux = x + y;
+    total = aux;
+    return total;
+}
+
+console.log(sumadito(11,11));
