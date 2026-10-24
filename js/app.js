@@ -14,3 +14,28 @@ let resultado = suma();
 console.log(resultado);
 
 console.log(suma());
+
+//Funciones con parametros
+let a;
+let b;
+function sumar (a,b){
+    return a + b;
+}
+console.log(sumar(a));
+
+function sumita(b){
+    return b + 2;
+}
+console.log("Reemplazamos b por el 5 y mostramos el resultado: ",sumita(5));
+
+console.log(sumar(4,5));
+console.log(typeof sumar())
+
+
+
+function sumando(c,d){
+    console.log(arguments);
+    return c + d;
+}
+let res = sumando(5,6,1,2,3);
+console.log(res);
